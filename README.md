@@ -1,32 +1,39 @@
-# 🎬 Netflix Content Analysis & Strategy Dashboard
+<div align="center">
 
-[![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.64.0-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
-[![Plotly](https://img.shields.io/badge/Plotly-Interactive%20Charts-3F4F75?logo=plotly&logoColor=white)](https://plotly.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# 🎬 Netflix Content Analysis
 
-An end-to-end Data Analytics portfolio project exploring **8,807 titles** on Netflix. This repository features an in-depth Exploratory Data Analysis (EDA) notebook and an interactive **Streamlit Web Application** designed to uncover content strategy patterns, growth trajectories, international diversification, and catalog composition.
+### An Interactive Data Analytics Dashboard built with Python & Streamlit
+
+[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.64-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://streamlit.io)
+[![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=flat-square&logo=pandas&logoColor=white)](https://pandas.pydata.org)
+[![Plotly](https://img.shields.io/badge/Plotly-Interactive%20Charts-3F4F75?style=flat-square&logo=plotly&logoColor=white)](https://plotly.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/Sanoj-936/netflix-content-analysis?style=flat-square)](https://github.com/Sanoj-936/netflix-content-analysis)
+
+**[📊 View on GitHub](https://github.com/Sanoj-936/netflix-content-analysis)** · **[🚀 Live Dashboard](#-live-demo)** · **[📖 Documentation](#-installation)**
+
+</div>
+
+---
+
+## 📌 Overview
+
+This project performs a comprehensive **Exploratory Data Analysis (EDA)** on Netflix's global content catalog — covering 8,807 titles across 127 countries. The insights are surfaced through an interactive **Streamlit web dashboard** that enables real-time filtering, multi-dimensional exploration, and strategic content analysis.
+
+The analysis investigates key business questions about Netflix's content strategy:
+
+- How has the Netflix library grown year-over-year since 2008?
+- What is the platform's balance between Movies and TV Shows?
+- Which genres and countries dominate the catalog?
+- How are titles distributed across maturity ratings?
+- What patterns emerge in movie runtimes and series longevity?
 
 ---
 
 ## 🚀 Live Demo
 
-> 🌐 **Live Web Application:** [Open Netflix Content Analysis Dashboard](https://share.streamlit.io) *(Deployment instructions below)*
-
----
-
-## 📌 Project Overview
-
-With thousands of movies and television shows available globally, streaming platforms rely heavily on data-informed acquisition and production strategies. This project investigates the Netflix catalog to answer key business and operational questions:
-
-- **Portfolio Composition:** What is the balance between standalone feature films and episodic series?
-- **Growth Over Time:** When did Netflix experience its most aggressive library expansion, and how did market competition and production cycles impact post-2019 additions?
-- **Global Strategy:** Which countries produce the highest volume of content, and where are emerging regional growth markets?
-- **Genre & Audience Targeting:** Which genres dominate catalog hours, and how is content distributed across maturity ratings?
-- **Viewer Habits & Runtime:** What is the ideal runtime for Netflix films, and how long do TV series typically sustain user engagement?
-
-The project couples rigorous Jupyter Notebook data cleaning and statistical exploration with an interactive, multi-dimensional **Streamlit dashboard**.
+> 🌐 **Live Dashboard:** [Deploying — see instructions below to run locally](#-run-locally)
 
 ---
 
@@ -36,78 +43,85 @@ The project couples rigorous Jupyter Notebook data cleaning and statistical expl
 
 ---
 
-## 🎯 Key Features
+## 📊 Key Insights
 
-- **Executive KPI Scorecard:** Instant high-level metrics for total titles, movie/TV split, active production countries, unique genres, and peak acquisition years.
-- **Dynamic Multi-Parameter Filtering:** Real-time filtering by content type (Movies/TV Shows), release year range, genre tags, maturity rating, and free-text search (title, director, cast).
-- **Interactive Visualizations (Plotly):**
-  - Donut and bar charts for Movies vs. TV Shows ratio.
-  - Time series area/line charts tracking yearly catalog additions (2008–2021).
-  - Monthly acquisition seasonality tracking.
-  - Horizontal bar charts for top 15 producing nations and top 15 genres.
-  - Runtime distribution histograms with mean and median runtime metrics.
-  - TV series season longevity distributions.
-- **Data Explorer & CSV Export:** Searchable, paginated data table with one-click filtered dataset export.
-- **Reproducible Data Pipeline:** Clean `src/data_processing.py` module for portable loading, cleaning, and metric computation.
-
----
-
-## 📊 Key Analytical Insights
-
-| Analytical Focus | Finding | Strategic Implication |
-|---|---|---|
-| **Content Distribution** | **69.6% Movies** (6,131 titles) vs. **30.4% TV Shows** (2,676 titles) | Movies provide broad, standalone viewing variety; TV shows drive long-term subscriber retention and binge viewing. |
-| **Expansion Peak** | Exponential growth began in **2016**, reaching an all-time peak of **2,016 additions in 2019** | Post-2019 moderation reflects industry-wide shift toward curated Originals and production delays during 2020. |
-| **Geographic Footprint** | **United States (3,689 titles)**, **India (1,046 titles)**, and **United Kingdom (804 titles)** lead output | Significant diversification into India, UK, Canada, France, and South Korea underscores aggressive international localization. |
-| **Genre Dominance** | **International Movies (2,752)**, **Dramas (2,427)**, and **Comedies (1,674)** top the catalog | Non-English and local-language productions are critical growth drivers for global subscriber acquisition. |
-| **Movie Runtime** | Distribution peaks tightly between **80 and 120 minutes** (Average: ~99.6 min) | Viewers strongly favor standard 90–100 minute feature lengths over extended 2.5h+ runtimes. |
-| **Series Longevity** | Over **67% of TV shows conclude after Season 1**; <10% exceed 3 seasons | Single-season investments minimize sunk costs for underperforming titles while identifying break-out franchises. |
+| Finding | Detail |
+|---|---|
+| **Content Split** | 69.6% Movies (6,131 titles) vs. 30.4% TV Shows (2,676 titles) |
+| **Peak Growth Year** | 2019 — 2,016 titles added in a single year |
+| **Top Producing Country** | United States (3,689 titles), followed by India (1,046) and UK (804) |
+| **Most Common Genre** | International Movies (2,752), Dramas (2,427), Comedies (1,674) |
+| **Typical Movie Runtime** | 80–120 minutes (mean ≈ 99.6 min) |
+| **TV Show Longevity** | 67%+ of series end after Season 1 |
+| **Most Common Rating** | TV-MA (most titles) — skewing toward mature audiences |
+| **International Growth** | Non-English content is among the fastest-growing genre buckets |
 
 ---
 
-## 📈 Visualizations from EDA
+## ✨ Features
 
-| Content Growth | Movies vs. TV Shows | Top Genres |
-|:---:|:---:|:---:|
-| ![Growth](images/netflix_growth.png) | ![Type](images/movies_vs_tvshows.png) | ![Genres](images/top_genres.png) |
+### 🎛️ Interactive Dashboard (Streamlit)
+- **Executive KPI Scorecard** — total titles, Movies %, TV Shows %, active countries, unique genres
+- **Sidebar Filters** — filter by content type, release year range, genre, rating, and free-text search (title/cast)
+- **Filtered CSV Export** — download any filtered view as a CSV file
+- **Responsive Layout** — wide-format, tab-organized dashboard
 
-| Top Countries | Content Ratings | Movie Durations |
-|:---:|:---:|:---:|
-| ![Countries](images/top_countries.png) | ![Ratings](images/rating_distribution.png) | ![Duration](images/movie_duration.png) |
+### 📈 Visualizations (Plotly Interactive)
+- **Content Distribution** — donut chart + bar chart for Movies vs. TV Shows breakdown
+- **Growth Trends** — year-over-year content additions (area chart) + monthly seasonality
+- **Geographic Analysis** — top 15 producing countries (horizontal bar chart)
+- **Genre Dynamics** — top 15 genres by volume
+- **Duration & Ratings** — movie runtime histogram, TV series season distribution, rating breakdown
+- **Data Explorer** — searchable, paginated data table with per-record detail view
+
+### 📓 Jupyter EDA Notebook
+- End-to-end exploratory analysis with Matplotlib & Seaborn
+- Covers: data cleaning, missing value handling, univariate/multivariate analysis
+- Exports 7 publication-quality static charts to `images/`
 
 ---
 
-## 📁 Dataset Details
+## 📁 Dataset
 
-- **Dataset:** Netflix Movies and TV Shows Dataset (scraped via Flixable)
-- **Observations:** 8,807 records
-- **Attributes:** 12 raw features
+| Attribute | Value |
+|---|---|
+| **Name** | Netflix Movies and TV Shows |
+| **Source** | Flixable / Kaggle |
+| **Records** | 8,807 titles |
+| **Columns** | 12 raw features |
+| **Release Years** | 1925 – 2021 |
+| **Countries** | 127 unique production countries |
 
-| Column | Type | Description | Cleaning Applied |
-|---|---|---|---|
-| `show_id` | String | Unique record identifier (`s1`, `s2`, ...) | Primary key |
-| `type` | String | Format: `Movie` or `TV Show` | Categorical verification |
-| `title` | String | Title of the production | Cleaned string formatting |
-| `director` | String | Director name(s) | 2,634 missing values imputed as `'Unknown'` |
-| `cast` | String | Leading cast members (comma-separated) | 825 missing values imputed as `'Unknown'` |
-| `country` | String | Country/countries of production | 831 missing values imputed as `'Unknown'` |
-| `date_added` | String | Date title was added to Netflix | Stripped whitespace, parsed to `datetime64` |
-| `release_year` | Integer | Original release year (1925 – 2021) | Validated integer range |
-| `rating` | String | Maturity rating code (`TV-MA`, `TV-14`, `R`, etc.) | 4 missing values imputed as `'Not Rated'` |
-| `duration` | String | Duration in minutes or seasons | Parsed to numeric `duration_numeric` |
-| `listed_in` | String | Associated genre categories | Unnested via string splitting |
-| `description` | String | Editorial summary synopsis | Text reference |
+**Key Columns:**
+
+| Column | Description |
+|---|---|
+| `show_id` | Unique title identifier |
+| `type` | `Movie` or `TV Show` |
+| `title` | Title name |
+| `director` | Director(s) — 2,634 missing, imputed as `Unknown` |
+| `cast` | Main cast members — 825 missing, imputed as `Unknown` |
+| `country` | Production country — 831 missing, imputed as `Unknown` |
+| `date_added` | Date added to Netflix platform |
+| `release_year` | Original release year |
+| `rating` | Maturity rating (TV-MA, TV-14, PG-13, R, etc.) |
+| `duration` | Runtime (minutes for Movies, seasons for TV Shows) |
+| `listed_in` | Genre category tags (comma-separated) |
+| `description` | Editorial synopsis |
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Core Language:** Python 3.11
-- **Data Manipulation & Analysis:** Pandas, NumPy
-- **Data Visualization:** Plotly Express, Plotly Graph Objects, Matplotlib, Seaborn
-- **Web Application Framework:** Streamlit
-- **Notebook Environment:** Jupyter Notebook / IPython
-- **Version Control:** Git & GitHub
+| Layer | Technology |
+|---|---|
+| **Language** | Python 3.11 |
+| **Data Wrangling** | Pandas, NumPy |
+| **Interactive Viz** | Plotly Express, Plotly Graph Objects |
+| **Static Viz (Notebook)** | Matplotlib, Seaborn |
+| **Dashboard Framework** | Streamlit |
+| **Notebook Environment** | Jupyter Notebook |
+| **Version Control** | Git, GitHub |
 
 ---
 
@@ -116,14 +130,14 @@ The project couples rigorous Jupyter Notebook data cleaning and statistical expl
 ```text
 netflix-content-analysis/
 │
-├── assets/
-│   ├── dashboard.png                 # Full dashboard preview for README
-│   └── dashboard_overview.png        # High-res analytics summary banner
+├── assets/                          # README visual assets
+│   ├── dashboard.png                # Dashboard preview banner
+│   └── dashboard_overview.png       # Multi-chart analytics overview
 │
 ├── data/
-│   └── netflix_titles.csv            # 8,807-record raw Netflix dataset (3.4 MB)
+│   └── netflix_titles.csv           # Source dataset (8,807 records, 3.4 MB)
 │
-├── images/                           # Generated EDA chart exports
+├── images/                          # Exported EDA charts
 │   ├── movie_duration.png
 │   ├── movies_vs_tvshows.png
 │   ├── netflix_growth.png
@@ -133,96 +147,144 @@ netflix-content-analysis/
 │   └── top_genres.png
 │
 ├── notebooks/
-│   └── netflix_analysis.ipynb        # In-depth Exploratory Data Analysis notebook
+│   └── netflix_analysis.ipynb       # Exploratory Data Analysis notebook
 │
 ├── src/
 │   ├── __init__.py
-│   └── data_processing.py            # Modular, reusable ETL & analytics functions
+│   └── data_processing.py           # Reusable ETL and analytics module
 │
-├── .gitignore                        # Git ignore patterns (.venv, pycache, etc.)
-├── .python-version                   # Python runtime pinning (3.11)
-├── app.py                            # Interactive Streamlit Web Application
-├── LICENSE                           # MIT License
-├── README.md                         # Comprehensive portfolio documentation
-└── requirements.txt                  # Pinned project dependencies
+├── .gitignore                       # Git ignore rules
+├── .python-version                  # Python 3.11 runtime pin
+├── LICENSE                          # MIT License
+├── README.md                        # Project documentation
+├── app.py                           # Streamlit dashboard application
+└── requirements.txt                 # Project dependencies
 ```
 
 ---
 
-## 💻 Installation & Local Setup
+## 📷 Analysis Snapshots
 
-### 1. Clone the Repository
+| Content Growth | Movies vs. TV Shows | Top Genres |
+|:---:|:---:|:---:|
+| ![Growth](images/netflix_growth.png) | ![Type](images/movies_vs_tvshows.png) | ![Genres](images/top_genres.png) |
+
+| Top Countries | Content Ratings | Movie Duration |
+|:---:|:---:|:---:|
+| ![Countries](images/top_countries.png) | ![Ratings](images/rating_distribution.png) | ![Duration](images/movie_duration.png) |
+
+---
+
+## 💻 Installation
+
+### Prerequisites
+- Python 3.11+
+- Git
+
+### Clone and Setup
+
 ```bash
-git clone https://github.com/<YOUR_USERNAME>/netflix-content-analysis.git
+# 1. Clone the repository
+git clone https://github.com/Sanoj-936/netflix-content-analysis.git
 cd netflix-content-analysis
 ```
 
-### 2. Create and Activate a Virtual Environment
 **Windows (PowerShell):**
 ```powershell
+# 2. Create virtual environment
 python -m venv .venv
+
+# 3. Activate it
 .\.venv\Scripts\Activate.ps1
+
+# 4. Install dependencies
+pip install --upgrade pip
+pip install -r requirements.txt
 ```
 
 **macOS / Linux:**
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-```
-
-### 3. Install Dependencies
-```bash
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 4. Run the Streamlit Dashboard
+---
+
+## ▶️ Run Locally
+
 ```bash
 streamlit run app.py
 ```
-The application will automatically open in your default browser at `http://localhost:8501`.
 
-### 5. Run the Jupyter Notebook (Optional)
+The dashboard will automatically open in your browser at:
+```
+http://localhost:8501
+```
+
+### Run the EDA Notebook
+
 ```bash
 jupyter notebook notebooks/netflix_analysis.ipynb
 ```
 
 ---
 
-## ☁️ Deployment Guide
+## ☁️ Deploy to Streamlit Community Cloud
 
-### Deploying to Streamlit Community Cloud (Free)
-
-1. Fork or push this repository to your personal GitHub account.
-2. Visit [share.streamlit.io](https://share.streamlit.io/) and log in with your GitHub account.
-3. Click **"New app"**.
-4. Configure the deployment settings:
-   - **Repository:** `<YOUR_USERNAME>/netflix-content-analysis`
+1. Fork this repository to your GitHub account.
+2. Visit [share.streamlit.io](https://share.streamlit.io/) and log in with GitHub.
+3. Click **"New app"** and configure:
+   - **Repository:** `Sanoj-936/netflix-content-analysis`
    - **Branch:** `main`
    - **Main file path:** `app.py`
-5. Click **"Deploy!"**.
-6. Streamlit Community Cloud will automatically detect `requirements.txt` and `.python-version`, install dependencies, and launch your live dashboard in 1–2 minutes.
+4. Click **"Deploy!"** — Streamlit Cloud auto-detects `requirements.txt` and `.python-version`.
+
+The app will be live at a URL such as:
+```
+https://netflix-content-analysis-sanoj936.streamlit.app
+```
+
+---
+
+## 📦 Dependencies
+
+```
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+streamlit>=1.30.0
+```
 
 ---
 
 ## 🔮 Future Improvements
 
-- [ ] **Sentiment Analysis:** Apply NLP (VADER / TextBlob / RoBERTa) to editorial descriptions to evaluate thematic tones across genres.
-- [ ] **External Rating Integration:** Enrich the dataset with IMDb and Rotten Tomatoes audience and critic scores via OMDb API.
-- [ ] **Content Recommendation Engine:** Build a content-based filtering system using TF-IDF and cosine similarity on cast, director, and genre attributes.
-- [ ] **Actor Co-occurrence Networks:** Visualize frequent cast collaboration networks using network graphs.
+- [ ] **IMDb/RT Integration** — Enrich catalog with external audience and critic scores via OMDb API
+- [ ] **Sentiment Analysis** — Apply NLP to editorial descriptions to classify thematic tone by genre
+- [ ] **Content Recommender** — Build a TF-IDF + cosine-similarity content-based filtering engine
+- [ ] **Cast Network Graph** — Visualize frequent actor collaboration clusters
 
 ---
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE) - see the `LICENSE` file for details.
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
 ## 👨‍💻 Author
 
-**Vijay Saroj**  
-B.Tech (ECE), Indian Institute of Technology (ISM) Dhanbad  
-- **GitHub:** [@vijaysaroj](https://github.com)
-- **Role:** Data Analyst / Data Scientist
+**Vijay Saroj**
+B.Tech (ECE), Indian Institute of Technology (ISM) Dhanbad
+
+[![GitHub](https://img.shields.io/badge/GitHub-Sanoj--936-181717?style=flat-square&logo=github)](https://github.com/Sanoj-936)
+
+---
+
+<div align="center">
+<sub>Built with ❤️ using Python, Pandas, Plotly, and Streamlit</sub>
+</div>
