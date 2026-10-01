@@ -33,7 +33,7 @@ The analysis investigates key business questions about Netflix's content strateg
 
 ## 🚀 Live Demo
 
-> 🌐 **Live Dashboard:** [Deploying — see instructions below to run locally](#-run-locally)
+> 🌐 **Live Dashboard:** [Open Netflix Content Analysis Dashboard](https://netflix-content-analysis-sanoj936.streamlit.app/)
 
 ---
 
@@ -278,8 +278,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
-**Vijay Saroj**
-B.Tech (ECE), Indian Institute of Technology (ISM) Dhanbad
+**Sanoj Kumar**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Sanoj--936-181717?style=flat-square&logo=github)](https://github.com/Sanoj-936)
 
