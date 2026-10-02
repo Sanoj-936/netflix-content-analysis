@@ -243,7 +243,7 @@ jupyter notebook notebooks/netflix_analysis.ipynb
 
 The app will be live at a URL such as:
 ```
-https://netflix-content-analysis-sanoj936.streamlit.app
+https://netflix-content-analysis-sanoj936.streamlit.app/
 ```
 
 ---
